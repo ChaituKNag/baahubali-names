@@ -1,10 +1,10 @@
 {
   "name": "baahubali-names",
-  "version": "1.2.0-beta.0",
+  "version": "1.3.0",
   "description": "Get random Baahubali names",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
   "homepage": "https://github.com/ChaituKNag/baahubali-names#readme",
   "dependencies": {
     "unique-random-array": "1.0.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "5.2.0"
   }
 }
