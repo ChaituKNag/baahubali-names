@@ -15,10 +15,21 @@ describe('baahubali-names', () => {
 
     describe('random', () => {
         it('should return a random item from the baahubali.all', () => {
-        var randomItem = baahubali.random();
+            var randomItem = baahubali.random();
 
-        expect(baahubali.all).to.include(randomItem);
+            expect(baahubali.all).to.include(randomItem);
+        });
+        
+        it('should return an array of random items if passed a number', () => {
+            var randomItems = baahubali.random(3);
+            
+            expect(randomItems).to.have.length(3);
+            
+            randomItems.forEach(item => {
+                expect(baahubali.all).to.include(item);
+            })
         })
+        
         
     });
 })
