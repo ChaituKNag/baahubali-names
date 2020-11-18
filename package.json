@@ -38,7 +38,7 @@
     "ghooks": "2.0.4",
     "mocha": "5.2.0",
     "nyc": "13.1.0",
-    "semantic-release": "15.12.3",
+    "semantic-release": "17.2.3",
     "travis-deploy-once": "5.0.9"
   },
   "config": {
